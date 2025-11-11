@@ -1,28 +1,32 @@
-/* Reset some default styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
     color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header */
 header {
-    background-color: #333;
+    background-color: #e74c3c; /* Rosso intenso */
     color: white;
+    padding: 2rem;
     text-align: center;
-    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 nav ul {
@@ -32,46 +36,98 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #f39c12;
+    color: #f39c12; /* Colore dorato */
+    transform: scale(1.1);
 }
 
-/* Main content */
 main {
-    padding: 2rem;
+    padding: 3rem 2rem;
     background-color: white;
+    max-width: 1200px;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 main h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .menu-list {
     list-style: none;
+    padding: 0;
 }
 
 .menu-list li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #34495e;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
+.menu-list li:hover {
+    background-color: #f39c12; /* Colore dorato */
     color: white;
-    text-align: center;
+    transform: scale(1.05);
+}
+
+.menu-list li span {
+    float: right;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
     padding: 1rem;
-    position: absolute;
-    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
     bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main h2 {
+        font-size: 2rem;
+    }
+
+    .menu-list li {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
 }
