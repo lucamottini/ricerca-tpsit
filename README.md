@@ -1,8 +1,8 @@
 # Divizione Compiti
 marino: menù pizze
 
-marrocco: menu dolci
+marrocco: menù dolci
 
 mottini: menù bevande
 
-ceraudo menu: primi
+ceraudo: menù primi
